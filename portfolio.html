@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WebStudio Portfolio</title>
+    <title>goit-markup-hw-03-portfolio</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
@@ -22,28 +22,36 @@
   </head>
   <body>
     <header class="nav-block nav-style container">
-      <nav class="navbar">
-        <ul class="ulist">
+      <nav>
+        <ul>
           <li class="logo">
-            <a href="index.html" class="link logo">Web<span class="logo-color">Studio</span></a>
+            <a href="index.html">Web<span class="logo-color">Studio</span></a>
           </li>
-          <li><a href="#" class="link hover">Agencja</a></li>
+          <li><a href="#" class="hover">Studio</a></li>
           <li class="padding-portfolio">
-            <a href="portfolio.html" class="link hover">Portfolio</a>
+            <a href="#" class="hover">Portfolio</a>
           </li>
-          <li><a href="#" class="link hover">Kontakty</a></li>
+          <li><a href="#" class="hover">Contacts</a></li>
         </ul>
       </nav>
-      <ul class="ulist">
-        <li class="list">
-          <a href="mailto:info@devstudio.com" class="link hover"
-            ><span class="font-color hover">info@devstudio.com</span></a
-          >
+      <ul>
+        <li>
+          <div class="nav-icon">
+            <svg width="16" height="12">
+              <use href="images/icons.svg#icon-e-mail"></use>
+            </svg>
+            <a class="icon" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </div>
         </li>
         <li class="padding-tel">
-          <a href="tel:+48111111111" class="link"
-            ><span class="font-color hover">+48 111 111 111</span></a
-          >
+          <div class="nav-icon">
+            <svg width="10px" height="16px">
+              <use href="images/icons.svg#icon-smartphone"></use>
+            </svg>
+            <a class="icon" href="tel:+1212-772-4150">+1 212-772-4150</a>
+          </div>
         </li>
       </ul>
     </header>
@@ -53,148 +61,158 @@
     <main>
       <section class="padding-prop section">
         <ul class="buttons-style container">
-          <li class="list">
-            <button type="button" class="bt button-padding button-hover">Wszystkie</button>
+          <li>
+            <button type="button" class="button-padding button-hover">
+              All
+            </button>
           </li>
-          <li class="list">
-            <button type="button" class="bt button-padding button-hover">Strony</button>
+          <li>
+            <button type="button" class="button-padding button-hover">
+              Web-sites
+            </button>
           </li>
-          <li class="list">
-            <button type="button" class="bt button-padding button-hover">Aplikacje</button>
+          <li>
+            <button type="button" class="button-padding button-hover">
+              Apps
+            </button>
           </li>
-          <li class="list">
-            <button type="button" class="bt button-padding button-hover">Dizajn</button>
+          <li>
+            <button type="button" class="button-padding button-hover">
+              Design
+            </button>
           </li>
-          <li class="list">
-            <button type="button" class="bt button-padding button-hover">Marketing</button>
+          <li>
+            <button type="button" class="button-padding button-hover">
+              Marketing
+            </button>
           </li>
         </ul>
       </section>
       <section class="padding-settings section">
         <ul class="container img-wrap">
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/techno-crack.jpg"
-                alt="Technocrack"
+                src="images/portfolio1.jpg"
+                alt="Technoduck"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
-                Technocrack
-                <div class="figcaption-division">Strona internetowa</div>
+                Technoduck
+                <div>Web-site</div>
               </figcaption>
             </figure>
           </li>
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/basketball.jpg"
-                alt="Grafika New Orlean vs Golden Star"
+                src="images/portfolio2.jpg"
+                alt="Poster New Orlean vs Golden Star"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
-                Grafika New Orlean vs Golden Star
-                <div class="figcaption-division">Dizajn</div>
+                Poster New Orlean vs Golden Star
+                <div>Design</div>
               </figcaption>
             </figure>
           </li>
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/sea-food.jpg"
-                alt="Restauracja Seafood"
+                src="images/portfolio3.jpg"
+                alt="Seafood Restaurant"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
-                Restauracja Seafood
-                <div class="figcaption-division">Aplikacja</div>
+                Seafood Restaurant
+                <div>Apps</div>
               </figcaption>
             </figure>
           </li>
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/project-prime.jpg"
-                alt="Projekt Prime"
+                src="images/portfolio4.jpg"
+                alt="Project Prime"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
-                Projekt Prime
-                <div class="figcaption-division">Marketing</div>
+                Project Prime
+                <div>Marketing</div>
               </figcaption>
             </figure>
           </li>
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/project-box.jpg"
-                alt="Pudełkowy projekt"
+                src="images/portfolio5.jpg"
+                alt="Project Boxes"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
-                Projekt Boxes
-                <div class="figcaption-division">Aplikacja</div>
+                Project Boxes
+                <div>Apps</div>
               </figcaption>
             </figure>
           </li>
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/inspiration.jpg"
-                alt="Ekran ze stroną internetową"
+                src="images/portfolio6.jpg"
+                alt="Inspiration has no Borders"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
                 Inspiration has no Borders
-                <div class="figcaption-division">Strona internetowa</div>
+                <div>Web-site</div>
               </figcaption>
             </figure>
           </li>
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/limited-edition.jpg"
-                alt="Magazyn Limited Edition"
+                src="images/portfolio7.jpg"
+                alt="Limited Edition"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
-                Magazyn Limited Edition
-                <div class="figcaption-division">Dizajn</div>
+                Limited Edition
+                <div>Design</div>
               </figcaption>
             </figure>
           </li>
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/project-lab.jpg"
+                src="images/portfolio8.jpg"
                 alt="Project LAB"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
-                Projekt LAB
-                <div class="figcaption-division">Marketing</div>
+                Project LAB
+                <div>Marketing</div>
               </figcaption>
             </figure>
           </li>
-          <li class="list">
+          <li>
             <figure class="img-box">
               <img
                 class="no-gap"
-                src="images/portfolio/growing-business.jpg"
-                alt="Aplikacja Growing Business"
+                src="images/portfolio9.jpg"
+                alt="Growing Business"
                 width="370"
               />
               <figcaption class="figcaption-padding box-border">
                 Growing Business
-                <div class="figcaption-division">Aplikacja</div>
+                <div>Apps</div>
               </figcaption>
             </figure>
           </li>
@@ -203,15 +221,48 @@
     </main>
     <footer class="footer-background footer-style">
       <div class="container-footer">
-        <ul>
+        <ul class="find-us-placement">
           <li class="logo">
-            <a href="#" class="link logo">Web<span class="footer-logo-color">Studio</span></a>
+            <a href="#">Web<span class="footer-logo-color">Studio</span></a>
           </li>
+          <li><p class="find-us-style">find us on</p></li>
         </ul>
         <address class="address-padding">
-          <div class="address-style">m. Warszawa, Aleje Jerozolimskie 21</div>
-          <a href="mailto:info@example.com" class="link hover">info@example.com</a>
-          <a href="tel:+48111111111" class="link hover">+48 111 111 111</a>
+          <ul class="address-style">
+            <div class="find-us-icons">
+              <li>695 Park Ave, New York, NY 10065,<br />United States</li>
+              <li class="find-us-icons-placment">
+                <div class="find-us-app-icons">
+                  <svg width="20" height="20">
+                    <use href="images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </div>
+                <div class="find-us-app-icons">
+                  <svg width="20" height="20">
+                    <use href="images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </div>
+                <div class="find-us-app-icons">
+                  <svg width="20" height="20">
+                    <use href="images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </div>
+                <div class="find-us-app-icons">
+                  <svg width="20" height="20">
+                    <use href="images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </div>
+              </li>
+            </div>
+            <li>
+              <a href="mailto:info@devstudio.com" class="hover"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li>
+              <a href="tel:+1212-772-4150" class="hover">+1 212-772-4150</a>
+            </li>
+          </ul>
         </address>
       </div>
     </footer>
