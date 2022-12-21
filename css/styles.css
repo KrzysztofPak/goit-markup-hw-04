@@ -14,7 +14,7 @@ body {
   padding-bottom: 94px;
 }
 
-ul {
+.ulist {
   margin-block-start: 0em;
   margin-block-end: 0em;
   margin-inline-start: 0px;
@@ -22,11 +22,11 @@ ul {
   padding-inline-start: 0px;
 }
 
-h3 {
+.header-3 {
   margin: 0;
 }
 
-p {
+.paragraph {
   margin: 0;
 }
 
@@ -67,11 +67,11 @@ p {
   text-decoration: none;
 }
 
-.nav-block nav {
+.nav-block .navbar {
   display: inline;
 }
 
-.nav-block ul {
+.nav-block .ulist {
   display: flex;
   align-items: center;
 }
@@ -154,7 +154,7 @@ p {
   text-align: -webkit-center;
 }
 
-.head-section-style h1 {
+.head-section-style .head-section {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -184,18 +184,18 @@ p {
   margin-bottom: 106px;
 }
 
-.info-section-style ul {
+.info-section-style .container {
   list-style: none;
 }
 
-.info-section-style h3 {
+.info-section-style .header-3 {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.info-section-style p {
+.info-section-style .paragraph {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
@@ -203,7 +203,7 @@ p {
   padding-top: 10px;
 }
 
-.about-us-style h2 {
+.about-us-style .header-2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -224,7 +224,7 @@ p {
   padding-top: 0px;
 }
 
-h2 {
+.header-2 {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -284,13 +284,14 @@ h2 {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer-style li {
+.footer-style .footer-list {
   text-decoration: none;
   list-style-type: none;
   font-style: normal;
+  list-style: none;
 }
 
-.buttons-style button {
+.buttons-style .bt {
   padding-top: 6px;
   padding-bottom: 6px;
   background: #f5f4fa;
@@ -322,11 +323,11 @@ h2 {
   list-style: none;
 }
 
-.img-wrap li {
+.img-wrap .wrap-list {
   width: 370px;
 }
 
-.figcaption-padding div {
+.figcaption-padding .division {
   padding-top: 13px;
   color: var(--second-font-color);
 }
@@ -384,13 +385,11 @@ h2 {
 }
 
 .box::before {
-  content: "czyli jaki ma to kurwa sens";
   font-size: 40px;
   color: orange;
 }
 
 .box::after {
-  content: "przeciez to jest utrudnianie sobie zycia";
   font-size: 30px;
   color: teal;
 }
